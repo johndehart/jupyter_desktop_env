@@ -1,5 +1,5 @@
 # jupyter_desktop_env
-Export of a working jupyter lab desktop enviroment for anaconda.
+Export of a working jupyter lab desktop enviroment for systems devlopment.
 
 # Operating System
 This system was tested on Windows 10 Pro (v20H0, OS:19042.1320)
@@ -21,3 +21,13 @@ Install Scilab from here --> https://www.scilab.org/download/6.1.1/scilab-6.1.1_
   - Variable value: (Location of the octave-cli.exe) `C:\Users\jdehart\AppData\Local\scilab-6.1.1\bin\WScilex-cli.exe`<br>
 
 ## Installation
+- Open Anaconda Navigator
+- Select `Environments` on the left (just below `Home`)
+- Select `Import` and select the `jupyter_desktop_env.yaml` from the `local drive option'
+- Give the environment a new name `elyra` for example
+- then wait `:)...` it will take a while to install
+- Once the environment is installed the jupyter lab component of the new environment must be rebuilt
+  - Selet the new enviroment from the list of enviroments and press the green dot with a white arrow point to the right
+  - Select `Open Terminal'
+  - In the terminal that popped up type `jupyter lab build` (no quotes of course...) again `wait` it takes a while.
+  - Once complete type `jupyter lab' to run... good luck 
