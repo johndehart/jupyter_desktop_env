@@ -27,6 +27,8 @@ Install Scilab from here --> https://www.scilab.org/download/6.1.1/scilab-6.1.1_
   - Click `Configure Navigator` on the lower left of the `Preferences` popup window
   - Set `ssl_verification = False`
   - Selecte `Save and Restart`
+  - *Note:* please recheck the settings once the restart is complete... if it has not changed open the command run the anaconda `CMD.exe` promt and enter the following `conda config --set ssl_verify false`. Recheck the settings and verify that `ssl_verification = False`
+
 - Select `Environments` on the left (just below `Home`)
 - Select `Import` and select the `jupyter_desktop_env.yaml` from the `local drive option'
 - Give the environment a new name `elyra` for example
