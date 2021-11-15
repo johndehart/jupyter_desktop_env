@@ -33,7 +33,7 @@ Install Scilab from here --> https://www.scilab.org/download/6.1.1/scilab-6.1.1_
 ### Elyra base enviroment
 This installs the base Elyra 3.2.X enviroment for testing
 - Select `Environments` on the left (just below `Home`)
-- Press `+Create` to create a new enviroment and give it a name (like `elyra_base`), press `Create' (leave python as default value, add R if you like but its not needed since elyra has builtin R tools.)
+- Press `+Create` to create a new enviroment and give it a name (like `elyra_base`), press `Create' (leave python as default value, click to add R, R is not neecessary but since elyra has builtin to use it nice to have.... adding R takes a while...)
 - Once the enviroment is built press select it in the list and click the green circle with the right facing arrow and click `Open Terminal`
 - In the new terminal enter the following command:
   - `conda install git nodejs -y && pip install jupyterlab==3.0.17 elyra && jupyter lab build`
