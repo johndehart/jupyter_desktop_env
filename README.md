@@ -1,13 +1,15 @@
-# jupyter_desktop_env
-Export of a working jupyter lab desktop enviroment for systems devlopment.
+# jupyterlab_test_enviroments
+Some working jupyter lab desktop enviroments for systems devlopment and testing.
 
 # Operating System
-This system was tested on Windows 10 Pro (v20H0, OS:19042.1320)
+This system was tested on Windows 10 Pro
 
 ## Prerequsites
 ### Anaconda:
 Install Anaconda from here --> `https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe`<br>
 
+### If you want to test out some opensource matlab alternatives for `SoS` (see below) testing
+---------------------------------------------------------------------------------------
 ### Octave: 
 Install Octave from here --> https://ftpmirror.gnu.org/octave/windows/octave-6.4.0-w64-installer.exe <br>
 - Create a User Variable (in Windows... search for `path`):
@@ -19,22 +21,26 @@ Install Scilab from here --> https://www.scilab.org/download/6.1.1/scilab-6.1.1_
 - Create a User Variable (in Windows... serach for `path`):
   - Variable Name: `SCILAB_EXECUTABLE`
   - Variable value: (Location of the octave-cli.exe) `C:\Users\jdehart\AppData\Local\scilab-6.1.1\bin\WScilex-cli.exe`<br>
+---------------------------------------------------------------------------------------
 
 ## Installation
 - Open Anaconda Navigator
 - Turn off `ssl_verification` (this stops the endless load times...)
   - Click `File --> Preferences` in the upper left
-  - Click `Configure Navigator` on the lower left of the `Preferences` popup window
-  - Set `ssl_verification = False`
-  - Selecte `Save and Restart`
-  - *Note:* please recheck the settings once the restart is complete... if it has not changed open the command run the anaconda `CMD.exe` promt and enter the following `conda config --set ssl_verify false`. Recheck the settings and verify that `ssl_verification = False`
+  - Uncheck the `Enable SSL verification' box and click apply
+  Note: can also be performed in the conda env --> `conda config --set ssl_verify false`.
 
+### Elyra base enviroment
+This installs the base Elyra 3.2.X enviroment for testing
 - Select `Environments` on the left (just below `Home`)
-- Select `Import` and select the `jupyter_desktop_env.yaml` from the `local drive option'
-- Give the environment a new name `elyra` for example
-- then wait `:)...` it will take a while to install
-- Once the environment is installed the jupyter lab component of the new environment must be rebuilt
-  - Selet the new enviroment from the list of enviroments and press the green dot with a white arrow point to the right
-  - Select `Open Terminal'
-  - In the terminal that popped up type `jupyter lab build` (no quotes of course...) again `wait` it takes a while.
-  - Once complete type `jupyter lab' to run... good luck 
+- Press `+Create` to create a new enviroment and give it a name (like `elyra_base`), press `Create' (leave python as default value, add R if you like but its not needed since elyra has builtin R tools.)
+- Once the enviroment is built press select it in the list and click the green circle with the right facing arrow and click `Open Terminal`
+- In the new terminal enter the following command:
+  - `conda install git nodejs -y && pip install jupyterlab==3.0.17 elyra && jupyter lab build`
+- Sit back and relax (with a beer if its after hours...) it will take about 10-20 minutes to build the installation
+- Once complete run `jupyter lab` at the cmd prompt to enjoy elyra...
+- See here for more information on elyra --> https://elyra.readthedocs.io/en/latest/index.html
+  - Lots of neat stuff on youtube also...
+
+### SoS Enviroment
+TBD
