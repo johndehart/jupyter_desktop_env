@@ -15,7 +15,7 @@ Install Anaconda from here --> `https://repo.anaconda.com/archive/Anaconda3-2021
   - Uncheck the `Enable SSL verification' box and click apply
   Note: can also be performed in the conda env --> `conda config --set ssl_verify false`.
 
-### Elyra base enviroment
+### Elyra base enviroment (https://elyra.readthedocs.io/en/latest/getting_started/overview.html)
 This installs the base Elyra 3.2.X enviroment for testing
 - Select `Environments` on the left (just below `Home`)
 - Press `+Create` to create a new enviroment and give it a name (like `elyra_base`), press `Create' (leave python as default value, click to add R, R is not neecessary but since elyra has builtin to use it nice to have.... adding R takes a while...)
@@ -27,8 +27,8 @@ This installs the base Elyra 3.2.X enviroment for testing
 - See here for more information on elyra --> https://elyra.readthedocs.io/en/latest/index.html
   - Lots of neat stuff on youtube also...
 
-### SoS Enviroment
-Basic build:
+### SoS Enviroment (https://vatlab.github.io/sos-docs/index.html#content)
+Basic build:<br>
 `conda install git nodejs sos sos-pbs sos-notebook jupyterlab-sos sos-papermill sos-r sos-python octave_kernel jupyter-sysml-kernel jupyterlab-git -c conda-forge -y && pip install jupyter-contrib-core jupyter-contrib-nbextensions calysto_bash scilab_kernel && jupyter lab build`
 
 ### If you want to test out some opensource matlab alternatives for `SoS` testing
