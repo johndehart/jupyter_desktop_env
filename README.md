@@ -43,4 +43,6 @@ This installs the base Elyra 3.2.X enviroment for testing
   - Lots of neat stuff on youtube also...
 
 ### SoS Enviroment
-TBD
+Basic build:
+`conda install git nodejs sos sos-pbs sos-notebook jupyterlab-sos sos-papermill sos-r sos-python octave_kernel jupyter-sysml-kernel jupyterlab-git -c conda-forge -y && pip install jupyter-contrib-core jupyter-contrib-nbextensions calysto_bash scilab_kernel && jupyter lab build`
+
