@@ -20,17 +20,21 @@ This installs the base Elyra 3.2.X enviroment for testing
 - Select `Environments` on the left (just below `Home`)
 - Press `+Create` to create a new enviroment and give it a name (like `elyra_base`), press `Create' (leave python as default value, click to add R, R is not neecessary but since elyra has builtin to use it nice to have.... adding R takes a while...)
 - Once the enviroment is built press select it in the list and click the green circle with the right facing arrow and click `Open Terminal`
-- In the new terminal enter the following command:
-  - `conda install git nodejs jupyterlab-drawio -y && pip install jupyterlab==3.0.17 elyra && jupyter lab build`
-- Sit back and relax (with a beer if its after hours...) it will take about 10-20 minutes to build the installation
+- In the new terminal enter the following command: 
+```
+conda install git nodejs jupyterlab-drawio -y && pip install jupyterlab==3.0.17 elyra && jupyter lab build
+```
+
+- Sit back and relax (with a beer if its after hours...) it will take about 20-30 minutes to build the installation
 - Once complete run `jupyter lab` at the cmd prompt to enjoy elyra...
 - See here for more information on elyra --> https://elyra.readthedocs.io/en/latest/index.html
   - Lots of neat stuff on youtube also...
 
 ### SoS Enviroment (https://vatlab.github.io/sos-docs/index.html#content) see also [#3](/../../issues/3)
 Basic build:<br>
-`conda install git nodejs jupyterlab-drawio sos sos-pbs sos-notebook jupyterlab-sos sos-papermill sos-r sos-python octave_kernel jupyter-sysml-kernel jupyterlab-git -c conda-forge -y && pip install jupyter-contrib-core jupyter-contrib-nbextensions calysto_bash scilab_kernel && jupyter lab build
-`
+```
+conda install git nodejs jupyterlab-drawio sos sos-pbs sos-notebook jupyterlab-sos sos-papermill sos-r sos-python octave_kernel jupyter-sysml-kernel jupyterlab-git -c conda-forge -y && pip install jupyter-contrib-core jupyter-contrib-nbextensions calysto_bash scilab_kernel && jupyter lab build
+```
 
 
 ### If you want to test out some opensource matlab alternatives for `SoS` testing
